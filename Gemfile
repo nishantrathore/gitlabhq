@@ -12,8 +12,8 @@ gem 'sprockets', '~> 3.7.0'
 gem 'default_value_for', '~> 3.0.0'
 
 # Supported DBs
-gem 'mysql2', '~> 0.3.16', group: :mysql
-gem 'pg', '~> 0.18.2', group: :postgres
+gem 'mysql2', '~> 0.5.2', group: :mysql
+#gem 'pg', '~> 0.18.2', group: :postgres
 
 gem 'rugged', '~> 0.24.0'
 
@@ -177,8 +177,7 @@ gem 'jira-ruby', '~> 1.1.2'
 gem 'gitlab-flowdock-git-hook', '~> 1.0.1'
 
 # Gemnasium integration
-gem 'gemnasium-gitlab-service', '~> 0.2'
-
+gem 'gemnasium-gitlab-service', :github => 'gemnasium/gemnasium-gitlab-service', :tag => 'v0.2.1'
 # Slack integration
 gem 'slack-notifier', '~> 1.5.1'
 
@@ -217,7 +216,7 @@ gem 'ace-rails-ap', '~> 4.1.0'
 gem 'mousetrap-rails', '~> 1.4.6'
 
 # Detect and convert string character encoding
-gem 'charlock_holmes', '~> 0.7.3'
+gem 'charlock_holmes', '~> 0.7.5'
 
 # Faster JSON
 gem 'oj', '~> 2.17.4'
@@ -288,7 +287,7 @@ group :development, :test do
   gem 'rspec-retry', '~> 0.4.5'
   gem 'spinach-rails', '~> 0.2.1'
   gem 'spinach-rerun-reporter', '~> 0.0.2'
-  gem 'rspec_profiling', '~> 0.0.5'
+  #gem 'rspec_profiling', '~> 0.0.5'
 
   # Prevent occasions where minitest is not bundled in packaged versions of ruby (see #3826)
   gem 'minitest', '~> 5.7.0'
@@ -296,9 +295,9 @@ group :development, :test do
   # Generate Fake data
   gem 'ffaker', '~> 2.4'
 
-  gem 'capybara', '~> 2.6.2'
+ #gem 'capybara', '~> 2.6.2'
   gem 'capybara-screenshot', '~> 1.0.0'
-  gem 'poltergeist', '~> 1.9.0'
+  #gem 'poltergeist', '~> 1.9.0'
 
   gem 'spring', '~> 1.7.0'
   gem 'spring-commands-rspec', '~> 1.0.4'
